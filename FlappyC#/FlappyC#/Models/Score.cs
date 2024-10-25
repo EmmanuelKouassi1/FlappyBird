@@ -1,4 +1,6 @@
-﻿namespace FlappyC_.Models
+﻿using System.Text.Json.Serialization;
+
+namespace FlappyC_.Models
 {
     public class Score
     {
@@ -9,6 +11,8 @@
         public bool Visibilité { get; set; }
         
         public string Pseudo { get; set; }
+
+        [JsonIgnore]
 
         public User? User { get; set; }
 

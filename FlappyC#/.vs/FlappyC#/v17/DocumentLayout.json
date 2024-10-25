@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\models\\registedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\models\\registedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\models\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RegisteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\RegisteDTO.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Models\\RegisteDTO.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\RegisteDTO.cs",
+              "RelativeToolTip": "FlappyC#\\Models\\RegisteDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:32:17.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "FlappyC#\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T18:16:20.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "_Context.cs",
               "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Data\\_Context.cs",
               "RelativeDocumentMoniker": "FlappyC#\\Data\\_Context.cs",
@@ -42,12 +76,11 @@
               "RelativeToolTip": "FlappyC#\\Data\\_Context.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:40:29.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T17:40:29.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ScoresController.cs",
               "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\ScoresController.cs",
               "RelativeDocumentMoniker": "FlappyC#\\Controllers\\ScoresController.cs",
@@ -66,14 +99,14 @@
               "RelativeDocumentMoniker": "FlappyC#\\Program.cs",
               "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Program.cs",
               "RelativeToolTip": "FlappyC#\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAChAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T17:38:05.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\User.cs",
               "RelativeDocumentMoniker": "FlappyC#\\Models\\User.cs",
@@ -86,13 +119,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Score.cs",
               "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\Score.cs",
               "RelativeDocumentMoniker": "FlappyC#\\Models\\Score.cs",
               "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\Score.cs",
               "RelativeToolTip": "FlappyC#\\Models\\Score.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T16:57:18.574Z",
               "EditorCaption": ""
