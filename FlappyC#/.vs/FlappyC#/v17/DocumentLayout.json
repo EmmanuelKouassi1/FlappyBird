@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\data\\_context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\models\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\models\\score.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\controllers\\scorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|c:\\users\\6225600\\downloads\\flappybird\\flappyc#\\flappyc#\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7584509-99CA-4EC8-8EA4-7B589BAE46DF}|FlappyC#\\FlappyC#.csproj|solutionrelative:flappyc#\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Context.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Data\\_Context.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Data\\_Context.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Data\\_Context.cs",
+              "RelativeToolTip": "FlappyC#\\Data\\_Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:40:29.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScoresController.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\ScoresController.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Controllers\\ScoresController.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\ScoresController.cs",
+              "RelativeToolTip": "FlappyC#\\Controllers\\ScoresController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:39:32.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Program.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Program.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Program.cs",
+              "RelativeToolTip": "FlappyC#\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAChAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:38:05.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\User.cs",
+              "RelativeToolTip": "FlappyC#\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:11:45.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Score.cs",
+              "DocumentMoniker": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\Score.cs",
+              "RelativeDocumentMoniker": "FlappyC#\\Models\\Score.cs",
+              "ToolTip": "C:\\Users\\6225600\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Models\\Score.cs",
+              "RelativeToolTip": "FlappyC#\\Models\\Score.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T16:57:18.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
