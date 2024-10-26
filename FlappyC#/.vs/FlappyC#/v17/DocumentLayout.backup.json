@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "FlappyC#\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\kouas\\Downloads\\FlappyBird\\FlappyC#\\FlappyC#\\Controllers\\UsersController.cs",
               "RelativeToolTip": "FlappyC#\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T18:16:20.414Z",
               "EditorCaption": ""
@@ -87,7 +87,8 @@
               "RelativeToolTip": "FlappyC#\\Controllers\\ScoresController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwDIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:39:32.603Z"
+              "WhenOpened": "2024-10-25T17:39:32.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -99,7 +100,8 @@
               "RelativeToolTip": "FlappyC#\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:38:05.732Z"
+              "WhenOpened": "2024-10-25T17:38:05.732Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

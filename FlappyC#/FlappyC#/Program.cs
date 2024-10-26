@@ -19,6 +19,7 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
     options.Password.RequireNonAlphanumeric = false;
 
 
+
 });
 
 builder.Services.AddControllers();
