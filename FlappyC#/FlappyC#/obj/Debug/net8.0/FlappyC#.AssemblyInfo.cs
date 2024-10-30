@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlappyC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d85f2c6c469fe661bf5d0a0b565c4a8e27ff877e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d971bd96c8c2af583eb97bf174406d9c64e73c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlappyC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlappyC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

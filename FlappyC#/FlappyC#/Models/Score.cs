@@ -14,7 +14,7 @@ namespace FlappyC_.Models
 
         [JsonIgnore]
 
-        public User? User { get; set; }
+        public virtual User? User { get; set; }
 
       
     }

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FlappyC_.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace FlappyC_.Controllers
 {
@@ -14,17 +16,29 @@ namespace FlappyC_.Controllers
     public class ScoresController : ControllerBase
     {
         private readonly _Context _context;
+        private UserManager<User> UserManager;
 
-        public ScoresController(_Context context)
+        public ScoresController(_Context context, UserManager<User> userManager)
         {
             _context = context;
+            UserManager = userManager;
         }
 
         // GET: api/Scores
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Score>>> GetScore()
         {
-            return await _context.Score.ToListAsync();
+            if(_context.Score == null)
+            {
+                return NotFound();
+            }
+            User? user = await UserManager.FindByIdAsync(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            if (user != null)
+            {
+                return user.Scores;
+            }
+            return StatusCode(StatusCodes.Status400BadRequest, new { Message = "Utilisateur non trouvé." });
+   
         }
 
         // GET: api/Scores/5
@@ -77,14 +91,34 @@ namespace FlappyC_.Controllers
         [HttpPost]
         public async Task<ActionResult<Score>> PostScore(Score score)
         {
-            _context.Score.Add(score);
-            await _context.SaveChangesAsync();
+            if (_context.Score == null)
+            {
+                return Problem("Entity set 'semaine9_v2_serveurContext.Comment' is null.");
+            }
 
-            return CreatedAtAction("GetScore", new { id = score.Id }, score);
+            // Trouver l'utilisateur via son token
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            User? user = await _context.Users.FindAsync(userId);
+
+            if (user != null)
+            {
+                // On remplit les références de relation
+                score.User = user;
+                user.Scores.Add(score);
+
+                // On ajoute l'objet dans la BD
+                _context.Score.Add(score);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetComment", new { id = score.Id }, score);
+            }
+
+            return StatusCode(StatusCodes.Status400BadRequest,
+                new { Message = "Utilisateur non trouvé." });
         }
 
-        // DELETE: api/Scores/5
-        [HttpDelete("{id}")]
+            // DELETE: api/Scores/5
+            [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteScore(int id)
         {
             var score = await _context.Score.FindAsync(id);
@@ -102,6 +136,10 @@ namespace FlappyC_.Controllers
         private bool ScoreExists(int id)
         {
             return _context.Score.Any(e => e.Id == id);
+
         }
+
+        
+
     }
 }
