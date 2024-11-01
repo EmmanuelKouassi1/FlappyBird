@@ -9,9 +9,13 @@ import { MaterialModule } from './material.module';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
+
 export class AppComponent {
   
   toggleLogout : boolean = true;
+
+
 
   logout(){
 

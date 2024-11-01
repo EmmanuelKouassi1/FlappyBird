@@ -6,7 +6,7 @@ namespace FlappyC_.Models
     public class User: IdentityUser
     {
         [JsonIgnore]
-        public List<Score> Scores = null!;
+        public virtual List<Score> Scores { get; set; } = null!;
        
 
     }

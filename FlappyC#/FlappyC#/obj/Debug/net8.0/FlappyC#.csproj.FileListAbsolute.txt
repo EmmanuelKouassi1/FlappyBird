@@ -265,3 +265,4 @@ C:\Users\6225600\Downloads\FlappyBird\FlappyC#\FlappyC#\obj\Debug\net8.0\refint\
 C:\Users\6225600\Downloads\FlappyBird\FlappyC#\FlappyC#\obj\Debug\net8.0\FlappyC#.pdb
 C:\Users\6225600\Downloads\FlappyBird\FlappyC#\FlappyC#\obj\Debug\net8.0\FlappyC#.genruntimeconfig.cache
 C:\Users\6225600\Downloads\FlappyBird\FlappyC#\FlappyC#\obj\Debug\net8.0\ref\FlappyC#.dll
+C:\Users\6225600\Downloads\FlappyBird\FlappyC#\FlappyC#\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -13,7 +13,7 @@ using System.Text;
 
 namespace FlappyC_.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
