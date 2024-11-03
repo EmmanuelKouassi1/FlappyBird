@@ -4,6 +4,7 @@ import { MaterialModule } from '../material.module';
 import { FormsModule } from '@angular/forms';
 import { lastValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { LoginDTO } from '../models/loginDTO';
 const domain : string="https://localhost:7197/";
 @Component({
   selector: 'app-login',
@@ -30,12 +31,14 @@ export class LoginComponent {
   ngOnInit() {
   }
 
-  login(){
-
-
+  async login(): Promise<void> {
+    let loginDTO = new LoginDTO(this.loginUsername, this.loginPassword);
+    let x = await lastValueFrom(this.http.post<LoginDTO>(domain + "api/Users/Login", loginDTO));
+    console.log(x);
     // Redirection si la connexion a réussi :
     this.route.navigate(["/play"]);
-  }
+  } 
+  
 
 
     async register(): Promise<void> {
