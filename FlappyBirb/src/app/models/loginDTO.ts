@@ -1,8 +1,8 @@
 export class LoginDTO{
 
     constructor(
-        public loginUsername : string = "",
-        public loginPassword : string = ""
+        public username : string = "",
+        public password : string = ""
        
     ){}
 

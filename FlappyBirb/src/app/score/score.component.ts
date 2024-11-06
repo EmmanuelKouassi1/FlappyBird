@@ -3,7 +3,10 @@ import { Score } from '../models/score';
 import { MaterialModule } from '../material.module';
 import { CommonModule } from '@angular/common';
 import { Round00Pipe } from '../pipes/round-00.pipe';
-
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { lastValueFrom } from 'rxjs';
+const domain : string="https://localhost:7197/"
 @Component({
   selector: 'app-score',
   standalone: true,
@@ -17,17 +20,26 @@ export class ScoreComponent {
   publicScores : Score[] = [];
   userIsConnected : boolean = false;
 
-  constructor() { }
+  constructor(public route : Router, private http: HttpClient) { }
 
   async ngOnInit() {
 
-    this.userIsConnected = sessionStorage.getItem("token") != null;
+    this.userIsConnected = localStorage.getItem("token") != null;
+  //requete pour remplir myScores et publicScores
+  if(this.userIsConnected){
+    this.myScores  = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores"));
+    console.log(this.myScores);
 
+  }
+ 
 
   }
 
   async changeScoreVisibility(score : Score){
-
+  if(!score.visibilite){
+    score.visibilite = true
+  }
+  score.visibilite = false
 
   }
 

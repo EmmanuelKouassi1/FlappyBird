@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlappyC_.Migrations
 {
     [DbContext(typeof(_Context))]
-    partial class _ContextModelSnapshot : ModelSnapshot
+    [Migration("20241106193912_InitialCreatl")]
+    partial class InitialCreatl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,11 +35,15 @@ namespace FlappyC_.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime?>("Date")
+                    b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("LeScore")
                         .HasColumnType("int");
+
+                    b.Property<string>("Pseudo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Temps")
                         .HasColumnType("float");
@@ -44,7 +51,7 @@ namespace FlappyC_.Migrations
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("Visibilite")
+                    b.Property<bool>("Visibilité")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");

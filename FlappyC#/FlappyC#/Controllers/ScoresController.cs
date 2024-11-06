@@ -56,55 +56,26 @@ namespace FlappyC_.Controllers
             return score;
         }
 
-        // PUT: api/Scores/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        /*[HttpPut("{id}")]
-        public async Task<IActionResult> PutScore(int id, Score score)
+         //PUT: api/Scores/5
+       
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutScore(int id)
         {
 
             User? user = await _context.Users.FindAsync(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
-            if (id == score.Id) 
-            {
-                return BadRequest();
-            }
+  
+          
 
             if (_context.Score == null)
                 return StatusCode(StatusCodes.Status500InternalServerError, new { Message = "Veuillez réessayer plus tard." }); // Problème avec la BD ?
 
            
-            Score? oldScore = await _context.Score.FindAsync(id);
+            Score? score = await _context.Score.FindAsync(id);
+            score.Visibilite = !score.Visibilite;
+            return Ok();
 
-      
-            if (oldScore == null)
-            {
-                return NotFound();
-            }
 
-            if (user == null || !user.Scores.Contains(oldScore))
-            {
-                return Unauthorized(new { Message = "Hey touche pas, c'est pas à toi !" });
-            }
-
-            _context.ChangeTracker.Clear();
-            _context.Entry(score).State = EntityState.Modified;
-
-            try
-            {
-                oldScor
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if ((await _context.Score.FindAsync(id)) == null)
-                    return NotFound();
-                else
-                    throw;
-            }
-
-            return Ok(new { Message = "Commentaire modifié", Comment = score }); 
-
-        }*/
+        }
 
         // POST: api/Scores
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

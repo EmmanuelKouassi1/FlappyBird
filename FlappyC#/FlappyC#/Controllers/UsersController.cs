@@ -62,8 +62,8 @@ namespace FlappyC_.Controllers
                 authClaims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
                 SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Ceci est une longue phrase crée pour une raison inconnu"));
                 JwtSecurityToken token = new JwtSecurityToken(
-                    issuer: "https://localhost:7128",
-                    audience: "https://localhost:4200",
+                    issuer: "https://localhost:7197",
+                    audience: "http://localhost:4200",
                     claims: authClaims,
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature)

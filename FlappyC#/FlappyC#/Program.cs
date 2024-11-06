@@ -39,7 +39,7 @@ builder.Services.AddAuthentication(option =>
         ValidateAudience = true,
         ValidateIssuer = true,
         ValidAudience = "http://localhost:4200",
-        ValidIssuer = "http://localhost:7182",
+        ValidIssuer = "https://localhost:7197",
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Ceci est une longue phrase crée pour une raison inconnu"))
     };
 

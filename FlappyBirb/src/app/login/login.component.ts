@@ -33,8 +33,9 @@ export class LoginComponent {
 
   async login(): Promise<void> {
     let loginDTO = new LoginDTO(this.loginUsername, this.loginPassword);
-    let x = await lastValueFrom(this.http.post<LoginDTO>(domain + "api/Users/Login", loginDTO));
+    let x = await lastValueFrom(this.http.post<any>(domain + "api/Users/Login", loginDTO));
     console.log(x);
+    localStorage.setItem("token", x.token);
     // Redirection si la connexion a réussi :
     this.route.navigate(["/play"]);
   } 
