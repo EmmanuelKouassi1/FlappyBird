@@ -4,7 +4,7 @@ import { MaterialModule } from '../material.module';
 import { CommonModule } from '@angular/common';
 import { Round00Pipe } from '../pipes/round-00.pipe';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';
 const domain : string="https://localhost:7197/"
 @Component({
@@ -23,11 +23,18 @@ export class ScoreComponent {
   constructor(public route : Router, private http: HttpClient) { }
 
   async ngOnInit() {
+    let token = localStorage.getItem("token");
+    let httpOptions = {
+      headers : new HttpHeaders({
+        'Content-Type' : 'application/json',
+        'Authorization' : 'Bearer '+ token
+      })
+    };
 
     this.userIsConnected = localStorage.getItem("token") != null;
   //requete pour remplir myScores et publicScores
   if(this.userIsConnected){
-    this.myScores  = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores"));
+    this.myScores  = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores",httpOptions));
     console.log(this.myScores);
 
   }

@@ -9,6 +9,7 @@ using FlappyC_.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.ConstrainedExecution;
 
 namespace FlappyC_.Controllers
 {
@@ -126,6 +127,9 @@ namespace FlappyC_.Controllers
             return Ok(new { Message = "Commentaire supprimé." });
 
         }
+       
+       
+
 
         private bool ScoreExists(int id)
         {
