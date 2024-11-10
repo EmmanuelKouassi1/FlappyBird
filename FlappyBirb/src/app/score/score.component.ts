@@ -6,6 +6,7 @@ import { Round00Pipe } from '../pipes/round-00.pipe';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';
+import { ScoreService } from '../services/score.service';
 const domain : string="https://localhost:7197/"
 @Component({
   selector: 'app-score',
@@ -16,38 +17,41 @@ const domain : string="https://localhost:7197/"
 })
 export class ScoreComponent {
 
-  myScores : Score[] = [];
-  publicScores : Score[] = [];
-  userIsConnected : boolean = false;
+  myScores: Score[] = [];
+  publicScores: Score[] = [];
+  userIsConnected: boolean = false;
 
-  constructor(public route : Router, private http: HttpClient) { }
+  constructor(
+    public route: Router, 
+    private scoreService: ScoreService // Inject the service
+  ) { }
 
   async ngOnInit() {
-    let token = localStorage.getItem("token");
-    let httpOptions = {
-      headers : new HttpHeaders({
-        'Content-Type' : 'application/json',
-        'Authorization' : 'Bearer '+ token
-      })
-    };
-
     this.userIsConnected = localStorage.getItem("token") != null;
-  //requete pour remplir myScores et publicScores
-  if(this.userIsConnected){
-    this.myScores  = await lastValueFrom(this.http.get<Score[]>(domain + "api/Scores",httpOptions));
-    console.log(this.myScores);
 
-  }
- 
-
+    if (this.userIsConnected) {
+      this.myScores = await this.scoreService.getMyScores();
+      console.log(this.myScores);
+    }
   }
 
-  async changeScoreVisibility(score : Score){
-  if(!score.visibilite){
-    score.visibilite = true
+  async getPublicScores() {
+    this.publicScores = await this.scoreService.getPublicScores();
+    console.log(this.publicScores);
   }
-  score.visibilite = false
 
+  async changeScoreVisibilitxy(id: number): Promise<void> {
+    const updatedScore = await this.scoreService.changeScoreVisibility(id);
+    console.log(updatedScore);
+  }
+
+  async postScore(score: Score): Promise<void> {
+    const newScore = await this.scoreService.postScore(score);
+    console.log(newScore);
+  }
+
+  async changeScoreVisibility(score: Score) {
+    score.visibilite = !score.visibilite;
   }
 
 }
